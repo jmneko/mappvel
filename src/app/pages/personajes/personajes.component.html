@@ -1,0 +1,7 @@
+<p>personajes works!</p>
+<div *ngFor="let comic of comics">
+  <h3>{{ comic.results }}</h3>
+  <p>{{ comic.description }}</p>
+  <img [src]="comic.thumbnail.path + '.' + comic.thumbnail.extension" alt="Thumbnail">
+  <!-- Añade aquí más campos según la estructura de tus datos -->
+</div>
